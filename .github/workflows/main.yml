@@ -39,7 +39,10 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v2 # Add this step to ensure the repo is checked out in the deploy job
+        uses: actions/checkout@v2
+
+      - name: Install dependencies # Install dependencies in the deploy job
+        uses: bahmutov/npm-install@v1
 
       - name: Download artifact
         uses: actions/download-artifact@v2
