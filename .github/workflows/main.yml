@@ -41,7 +41,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v2
 
-      - name: Install dependencies # Install dependencies in the deploy job
+      - name: Install dependencies
         uses: bahmutov/npm-install@v1
 
       - name: Download artifact
@@ -53,6 +53,6 @@ jobs:
       - name: Deploy with gh-pages
         run: |
           git remote set-url origin https://git:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
-          npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
+          npm run deploy -- -d dist -u "github-actions-bot <support+actions@github.com>"  # Specify the correct directory
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
