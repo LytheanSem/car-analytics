@@ -16,7 +16,7 @@ const BrandList = () => {
 
     return (
         <div>
-            <h2>Car Brands</h2>
+            <h2>Car_Brands</h2>
             <ul>
                 {carData.MMList.map(brand => (
                     <li key={brand.mkID} onClick={() => handleBrandClick(brand.mkID)}>
