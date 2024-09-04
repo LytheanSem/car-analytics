@@ -1,7 +1,13 @@
-import React from 'react';
-import { HashRouter as Router, Route, Routes, Link, Navigate } from 'react-router-dom';
-import Dashboard from './pages/Dashboard';
-import HighlightedCars from './pages/HighlightedCars';
+import React from "react";
+import {
+  HashRouter as Router,
+  Route,
+  Routes,
+  Link,
+  Navigate,
+} from "react-router-dom";
+import Dashboard from "./pages/Dashboard";
+import HighlightedCars from "./pages/HighlightedCars";
 
 function App() {
   return (
@@ -13,7 +19,7 @@ function App() {
               <Link to="/car-analytic">Dashboard</Link>
             </li>
             <li>
-              <Link to="/highlighted-cars">Highlight Cars</Link>
+              <Link to="/highlighted-cars">Highlighted Cars</Link>
             </li>
           </ul>
         </nav>
