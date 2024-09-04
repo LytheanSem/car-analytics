@@ -19,7 +19,7 @@ function App() {
               <Link to="/car-analytic">Dashboard</Link>
             </li>
             <li>
-              <Link to="/highlighted-cars">Highlighted Cars</Link>
+              <Link to="/highlighted-cars">Highlight Cars</Link>
             </li>
           </ul>
         </nav>
